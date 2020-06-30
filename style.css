@@ -8,7 +8,7 @@
 	--bgc: #FCFCFC; */
 
 	--accent: #374054;
-	--second-accent: #3498db;
+	--second-accent: #2e89d3;
 	--nav-text: black;
 	--title-text: #39444d;
 	--p-text: #5c646b;
@@ -194,7 +194,7 @@ header {
 }
 
 #tech-stack svg {
-	width: 5rem;
+	width: 4rem;
 }
 
 /*-------------------- Experience --------------------*/
@@ -242,12 +242,14 @@ header {
 }
 
 .project__article {
-	margin: 2em;
+	margin: 0 2em 4em 2em;
 	padding: 4em;
 	border-radius: 1em;
 }
 
-.project__image {}
+.project__img {
+	width: 100%;
+}
 
 .project__info {
 	margin: 2em;
@@ -269,6 +271,7 @@ header {
 .project__info a {
 	margin: 1em;
 	font-size: 0.9em;
+	font-weight: bold;
 	color: var(--second-accent);
 }
 
@@ -354,3 +357,8 @@ footer p {
 .footer__li svg:hover {
 	transform: scale(1.1);
 }
+
+
+
+
+@media only screen and (min-width: 992px) {}
