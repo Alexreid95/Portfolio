@@ -1,14 +1,29 @@
 :root {
-	--accent: #374054;
+	/* --accent: #99E1D9;
+	--second-accent: #F7567C;
 	--nav-text: black;
-	--nav-text-hover: #3498db;
-	--sub-title-text: #7e8890;
+	--title-text: #5D576B;
+	--p-text: #5D576B;
+	--border: #FFFAE3;
+	--bgc: #FCFCFC; */
+
+	--accent: #374054;
+	--second-accent: #3498db;
+	--nav-text: black;
+	--title-text: #7e8890;
 	--p-text: #74808a;
-	--text: black;
 	--border: #dcd9d9;
 	--bgc: #84c0e7;
-	--bgc-hover: #eee;
-	--basic-bgc: #fff;
+
+	/* 
+	
+	#FCFCFC white
+	#F7567C pink
+	#FFFAE3 cream
+	#99E1D9 green
+	#5D576B grey
+		
+	*/
 }
 
 /*-------------------- Global Styling --------------------*/
@@ -33,7 +48,7 @@ body {
 	right: 0;
 	width: 3em;
 	height: 1px;
-	background: var(--nav-text-hover);
+	background: var(--second-accent);
 }
 
 /*-------------------- Costume Styling --------------------*/
@@ -73,20 +88,20 @@ header {
 	flex-direction: row;
 	justify-content: space-around;
 	height: 5vh;
-	background-color: var(--bgc);
+	background-color: var(--second-accent);
 }
 
 .navbar>a {
 	align-self: center;
 	text-decoration: none;
 	color: var(--nav-text);
+	transition: 0.5s;
 }
 
 .navbar>a:hover,
 .navbar>a:focus {
 	text-decoration: none;
-	background: var(--bgc-hover);
-	color: var(--nav-text-hover);
+	transform: scale(1.2);
 }
 
 /*-------------------- Home --------------------*/
@@ -124,15 +139,16 @@ header {
 	text-decoration: none;
 	border-radius: 2em;
 	border: 1px solid var(--border);
-	background-color: var(--nav-text-hover);
 	color: white;
+	font-weight: bold;
+	background-color: var(--second-accent);
 	transition: 0.5s ease all;
 }
 
 .home__btn:hover {
 	text-decoration: none;
-	color: var(--text);
-	background-color: var(--basic-bgc);
+	background-color: var(--accent);
+
 }
 
 /*-------------------- About --------------------*/
@@ -142,7 +158,6 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 50vh;
 	text-align: center;
 	border-bottom: 1px solid var(--border);
 }
@@ -160,7 +175,6 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 80vh;
 	text-align: center;
 	border-bottom: 1px solid var(--border);
 }
@@ -190,7 +204,6 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 50vh;
 	text-align: center;
 	border-bottom: 1px solid var(--border);
 
@@ -208,7 +221,7 @@ header {
 	margin: 0 0 15px 0;
 	font-size: 1.2em;
 	font-weight: 300;
-	color: var(--sub-title-text);
+	color: var(--title-text);
 }
 
 #experience p {
@@ -225,37 +238,38 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	height: 140vh;
 	border-bottom: 1px solid var(--border);
 }
 
 .project__article {
-	padding: 2em 0;
+	margin: 2em;
+	padding: 4em;
+	border-radius: 1em;
 }
 
-.project-image {
-	float: left;
+.project__image {}
+
+.project__info {
+	margin: 2em;
 }
 
-.project-info {
-	margin-left: 300px;
-	padding: 1em;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-.project-info h3 {
+.project__info h3 {
 	margin: 0 0 1em 0;
 	font-size: 1.5em;
 	font-weight: 300;
 	color: var(--accent);
 }
 
-.project-info p {
+.project__info p {
 	margin: 0 0 1em 0;
 	font-size: 0.9em;
 	color: var(--p-text);
+}
+
+.project__info a {
+	margin: 1em;
+	font-size: 0.9em;
+	color: var(--second-accent);
 }
 
 /*-------------------- Content --------------------*/
@@ -265,7 +279,6 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 50vh;
 	text-align: center;
 }
 
@@ -276,6 +289,11 @@ header {
 
 #contact svg {
 	width: 5rem;
+	transition: 0.5s;
+}
+
+#contact svg:hover {
+	transform: scale(1.2);
 }
 
 .contact__ul {
@@ -300,14 +318,14 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: var(--bgc);
+	background: var(--second-accent);
 }
 
-footer>h3 {
+footer h2 {
 	margin: 0.5em;
 }
 
-footer>p {
+footer p {
 	margin: 0em;
 	padding: 0.5em;
 }
@@ -327,7 +345,12 @@ footer>p {
 	list-style: none;
 }
 
-footer svg {
+.footer__li svg {
 	margin: 0 1em;
 	height: 1.5em;
+	transition: 0.2s;
+}
+
+.footer__li svg:hover {
+	transform: scale(1.1);
 }
