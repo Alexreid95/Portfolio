@@ -91,15 +91,15 @@ header {
 	background-color: var(--second-accent);
 }
 
-.navbar>a {
+.navbar > a {
 	align-self: center;
 	text-decoration: none;
 	color: var(--nav-text);
 	transition: 0.5s;
 }
 
-.navbar>a:hover,
-.navbar>a:focus {
+.navbar > a:hover,
+.navbar > a:focus {
 	text-decoration: none;
 	transform: scale(1.2);
 }
@@ -148,7 +148,6 @@ header {
 .home__btn:hover {
 	text-decoration: none;
 	background-color: var(--accent);
-
 }
 
 /*-------------------- About --------------------*/
@@ -206,7 +205,6 @@ header {
 	justify-content: center;
 	text-align: center;
 	border-bottom: 1px solid var(--border);
-
 }
 
 #experience h3 {
@@ -358,7 +356,44 @@ footer p {
 	transform: scale(1.1);
 }
 
+@media only screen and (max-width: 580px) {
+	/* home */
+	.home__h1 {
+		margin: 0 0 1em 0;
+		font-size: 2.5em;
+	}
 
+	.home__h2 {
+		margin: 0 0 2em 0;
+		font-size: 1.5em;
+	}
 
+	/* about */
+	.about__p {
+		margin: 0;
+		padding: 1em;
+	}
 
-@media only screen and (min-width: 992px) {}
+	/* tech-stack */
+	#tech-stack {
+		padding: 1em 0em;
+	}
+	.tech-stack__li {
+		font-size: 0.75em;
+	}
+
+	#tech-stack svg {
+		width: 3rem;
+	}
+
+	/* projects */
+	.project__article {
+		margin: 0 1em 2em 1em;
+		padding: 2em;
+	}
+
+	/* contact */
+	#contact svg {
+		width: 3rem;
+	}
+}
