@@ -172,7 +172,7 @@ header {
 	text-decoration: none;
 	border-radius: 2em;
 	border: 1px solid var(--border);
-	color: white;
+	color: var(--nav-text);
 	font-weight: bold;
 	background-color: var(--second-accent);
 	transition: 0.5s ease all;
@@ -316,6 +316,7 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+	/* border-bottom: 1px solid var(--border); */
 }
 
 #contact svg {
