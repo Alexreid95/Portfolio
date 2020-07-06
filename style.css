@@ -350,6 +350,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	color: var(--nav-text);
 	background: var(--second-accent);
 }
 
@@ -376,19 +377,23 @@ footer p {
 .footer__li svg {
 	margin: 0 1em;
 	height: 1.2em;
+	fill: var(--nav-text);
 	transition: 0.2s;
 }
 
 .footer__li svg:hover {
+	fill: var(--nav-text-hover);
 	transform: scale(1.1);
 }
 
 @media only screen and (max-width: 600px) {
+
 	/* nav */
 	.navbar {
 		display: flex;
 		justify-content: flex-end;
 	}
+
 	.navbar .nav-items {
 		margin: 3em 0 0 0;
 		padding: 0;
