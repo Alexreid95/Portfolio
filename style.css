@@ -344,6 +344,10 @@ header {
 	text-decoration: none;
 }
 
+.contact__p {
+	color: var(--title-text);
+}
+
 /*-------------------- Footer --------------------*/
 footer {
 	margin-top: 5%;
