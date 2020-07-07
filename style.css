@@ -7,8 +7,8 @@
 	--border: #FFFAE3;
 	--bgc: #FCFCFC; */
 
-	--accent: #374054;
-	--second-accent: #d61961;
+	--accent: #d61961;
+	--second-accent: #1875c075;
 	--nav-text: white;
 	--nav-text-hover: black;
 	--title-text: #39444d;
@@ -42,7 +42,6 @@ body {
 .section-heading {
 	margin: 3rem 0 3rem 0;
 	position: relative;
-	z-index: -1;
 	display: inline-block;
 	font-size: 2em;
 	font-weight: 300;
@@ -52,13 +51,12 @@ body {
 	content: "";
 	margin: 0 auto;
 	position: absolute;
-	z-index: -1;
 	top: 100%;
 	left: 0;
 	right: 0;
 	width: 3em;
 	height: 1px;
-	background: var(--second-accent);
+	background: var(--accent);
 }
 
 /*-------------------- Box Styling --------------------*/
@@ -75,6 +73,7 @@ body {
 /*-------------------- Header --------------------*/
 header {
 	position: sticky;
+	z-index: 1;
 	top: 0;
 	text-align: center;
 	animation-name: dropHeader;
@@ -99,7 +98,7 @@ header {
 	flex-direction: row;
 	justify-content: space-around;
 	height: 3em;
-	background-color: var(--second-accent);
+	background-color: var(--accent);
 }
 
 .navbar .nav-items {
@@ -166,21 +165,51 @@ header {
 	font-weight: 300;
 }
 
-.home__btn {
+.home__button {
+	margin: 1em 0;
 	padding: 1em 2em;
-	display: inline-block;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-decoration: none;
-	border-radius: 2em;
-	border: 1px solid var(--border);
-	color: var(--nav-text);
+	font-size: 1.1em;
 	font-weight: bold;
-	background-color: var(--second-accent);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--nav-text);
+	background: linear-gradient(90deg, var(--accent), var(--second-accent));
+	border-radius: 2em;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
 	transition: 0.5s ease all;
 }
 
-.home__btn:hover {
-	text-decoration: none;
-	background-color: var(--accent);
+.home__button:hover {
+	transform: scale(1.1);
+}
+
+.home__button>span {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background: #fff;
+	pointer-events: none;
+	animation: ripples 0.5s linear infinite;
+}
+
+@keyframes ripples {
+	0% {
+		width: 0px;
+		height: 0px;
+		opacity: 0.5;
+	}
+
+	100% {
+		width: 500px;
+		height: 500px;
+		opacity: 0;
+	}
 }
 
 /*-------------------- About --------------------*/
@@ -217,48 +246,16 @@ header {
 }
 
 .tech-stack__li {
-	margin: 7px;
-	padding: 5px 10px;
+	margin: 0.5em;
+	padding: 0.2em 0.8em;
 	display: inline-block;
 	list-style: none;
 	font-size: 1.2em;
-	color: var(--accent);
+	color: var(--p-text);
 }
 
 #tech-stack svg {
 	width: 4rem;
-}
-
-/*-------------------- Experience --------------------*/
-#experience {
-	margin: 0 5%;
-	padding: 3em 1em;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-	border-bottom: 1px solid var(--border);
-}
-
-#experience h3 {
-	margin: 0;
-	display: inline-block;
-	font-size: 1.5em;
-	font-weight: 300;
-	color: var(--accent);
-}
-
-#experience h4 {
-	margin: 0 0 15px 0;
-	font-size: 1.2em;
-	font-weight: 300;
-	color: var(--title-text);
-}
-
-#experience p {
-	margin: 0;
-	font-size: 0.9em;
-	color: var(--p-text);
 }
 
 /*-------------------- Projects --------------------*/
@@ -292,7 +289,7 @@ header {
 	margin: 0 0 1em 0;
 	font-size: 1.5em;
 	font-weight: 300;
-	color: var(--accent);
+	color: var(--title-text);
 }
 
 .project__info p {
@@ -305,7 +302,7 @@ header {
 	margin: 1em;
 	font-size: 0.9em;
 	font-weight: bold;
-	color: var(--second-accent);
+	color: var(--accent);
 }
 
 /*-------------------- Content --------------------*/
@@ -355,7 +352,7 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	color: var(--nav-text);
-	background: var(--second-accent);
+	background: var(--accent);
 }
 
 footer h2 {
@@ -408,7 +405,7 @@ footer p {
 		width: 100vw;
 		height: 100vh;
 		text-align: center;
-		background: var(--second-accent);
+		background: var(--accent);
 		transition: left 0.3s ease;
 	}
 
@@ -450,6 +447,10 @@ footer p {
 	.home__h2 {
 		margin: 0 0 2em 0;
 		font-size: 1.5em;
+	}
+
+	.home__button {
+		font-size: 1em;
 	}
 
 	/* about */
