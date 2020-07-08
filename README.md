@@ -18,6 +18,8 @@ To run in terminal:
 
 ## Credits
 
+Beautiful Free Illustrations of Black People, [Black Illustrations](https://gumroad.com/blackillustrations)
+
 ## License
 
 MIT © KatriciaOlearczyk-Reid
