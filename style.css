@@ -588,7 +588,8 @@ footer p {
 	}
 
 	.about__image {
-		margin: 0 1em;
+		margin: 2em 1em;
+		padding: 1em;
 		width: 100%;
 	}
 
@@ -609,6 +610,7 @@ footer p {
 	#projects {
 		padding: 1em 0em;
 		flex-direction: column;
+		width: 100%;
 	}
 
 	.project__container {
