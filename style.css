@@ -610,7 +610,6 @@ footer p {
 	#projects {
 		padding: 1em 0em;
 		flex-direction: column;
-		width: 100%;
 	}
 
 	.project__container {
