@@ -9,8 +9,6 @@
 	--p-text: hsl(208, 8%, 39%);
 	--text-background: hsla(208, 8%, 39%, 0.282);
 	--border: hsl(0, 4%, 86%);
-
-	/* light blue #abe1f1; */
 }
 
 /*-------------------- Global Styling --------------------*/
@@ -44,6 +42,48 @@ body {
 	width: 3em;
 	height: 1px;
 	background: var(--accent);
+}
+
+/*-------------------- Styling Animation --------------------*/
+.glow-effect {
+	position: relative;
+	cursor: pointer;
+}
+
+.glow-effect:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	filter: blur(1.5em);
+	background: linear-gradient(
+		90deg,
+		var(--second-accent),
+		var(--accent),
+		var(--second-accent)
+	);
+	background-size: 500%;
+	border-radius: 2em;
+	transition: opacity 0.5s ease-in-out;
+	animation: glow-effect-links 20s linear infinite;
+}
+
+.glow-effect:hover:before {
+	opacity: 1;
+}
+
+@keyframes glow-effect-links {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 500% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
 }
 
 /*-------------------- Header --------------------*/
@@ -86,7 +126,7 @@ header {
 
 .navbar .nav-items li {
 	list-style: none;
-	padding: 0 1em;
+	padding: 0 0.8em;
 	transition: 0.5s;
 }
 
@@ -98,7 +138,7 @@ header {
 .navbar .nav-items li a {
 	text-decoration: none;
 	font-size: 1.2em;
-	font-weight: 500;
+	font-weight: bold;
 	color: var(--nav-text);
 }
 
@@ -166,7 +206,7 @@ header {
 	transform: scale(1.1);
 }
 
-.home__button>span {
+.home__button > span {
 	position: absolute;
 	transform: translate(-50%, -50%);
 	border-radius: 50%;
@@ -275,8 +315,9 @@ header {
 	background-position: center;
 	transform: translateY(0deg);
 	transform-style: preserve-3d;
-	transition: transform .7s cubic-bezier(.4, .2, .2, 1);
-	box-shadow: 0 6px 12px var(--accent-transparent), 0 6px 12px var(--second-accent-transparent);
+	transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	box-shadow: 0 6px 12px var(--accent-transparent),
+		0 6px 12px var(--second-accent-transparent);
 }
 
 .project__front.project__one {
@@ -289,7 +330,11 @@ header {
 
 .project__back {
 	color: var(--nav-text);
-	background: linear-gradient(45deg, var(--accent) 0%, var(--second-accent) 100%);
+	background: linear-gradient(
+		45deg,
+		var(--accent) 0%,
+		var(--second-accent) 100%
+	);
 	transform: rotateY(180deg);
 }
 
@@ -309,7 +354,7 @@ header {
 }
 
 .project__content p:after {
-	content: '';
+	content: "";
 	margin: 0 auto;
 	margin-top: 1.5em;
 	display: block;
@@ -329,11 +374,11 @@ header {
 	color: var(--second-accent);
 }
 
-.project__container:hover>.project__back {
+.project__container:hover > .project__back {
 	transform: rotateY(0deg);
 }
 
-.project__container:hover>.project__front {
+.project__container:hover > .project__front {
 	transform: rotateY(-180deg);
 }
 
@@ -420,11 +465,11 @@ footer p {
 }
 
 @media only screen and (max-width: 600px) {
-
 	/* nav */
 	.navbar {
 		display: flex;
 		justify-content: flex-end;
+		box-shadow: none;
 	}
 
 	.navbar .nav-items {
