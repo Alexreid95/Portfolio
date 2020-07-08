@@ -558,6 +558,25 @@ footer p {
 		padding: 1em 0em;
 	}
 
+	.project__container {
+		margin: 1em 1em 2em 1em;
+		padding: 0 1em;
+		width: 80%;
+	}
+
+	.project__content h2 {
+		margin-bottom: 1em;
+		font-size: 1em;
+	}
+
+	.project__content p {
+		font-size: 0.6em;
+	}
+
+	.project__content a {
+		font-size: 0.8em;
+	}
+
 	/* contact */
 	#contact {
 		padding: 1em 0em;
