@@ -18,7 +18,9 @@ To run in terminal:
 
 ## Credits
 
-Beautiful Free Illustrations of Black People, [Black Illustrations](https://gumroad.com/blackillustrations)
+Free Illustrations of Black People, [Black Illustrations](https://gumroad.com/blackillustrations)
+
+I customized the wicked cool background on my landing page at SVGBackgrounds.com.
 
 ## License
 

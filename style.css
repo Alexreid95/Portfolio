@@ -1,10 +1,8 @@
 :root {
-	/* --accent: rgb(148, 102, 255); */
 	--accent: hsl(337, 79%, 47%);
-	/* --accent-transparent: rgba(148, 102, 255, 0.25); */
-	--accent-transparent: hsla(337, 79%, 47%, 0.25);
-	--second-accent: hsl(64, 100%, 80%);
-	--second-accent-transparent: rgba(236, 241, 172, 0.25);
+	--accent-transparent: #d7196240;
+	--second-accent: hsl(64, 71%, 80%);
+	--second-accent-transparent: hsla(64, 71%, 81%, 0.251);
 	--nav-text: hsl(0, 0%, 100%);
 	--nav-text-hover: hsl(64, 100%, 85%);
 	--title-text: hsl(207, 15%, 26%);
@@ -23,6 +21,10 @@ body {
 	padding: 0;
 	font-family: "Lato", sans-serif;
 	overflow-x: hidden;
+
+	/* font-family: 'Prompt', sans-serif; */
+	/* font-family: 'Nunito Sans', sans-serif; */
+	/* font-family: 'Quicksand', sans-serif; */
 }
 
 /*-------------------- Section Heading Styling --------------------*/
@@ -31,7 +33,7 @@ body {
 	position: relative;
 	display: inline-block;
 	font-size: 2em;
-	font-weight: 300;
+	font-weight: 500;
 }
 
 .section-heading:after {
@@ -116,6 +118,7 @@ header {
 	flex-direction: row;
 	justify-content: space-around;
 	height: 3em;
+	font-family: 'Prompt', sans-serif;
 	background-color: var(--accent);
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
 }
@@ -169,6 +172,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	height: 85vh;
+	font-family: 'Quicksand', sans-serif;
 	text-align: center;
 	border-bottom: 1px solid var(--border);
 }
@@ -192,6 +196,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
+	font-family: 'Prompt', sans-serif;
 	font-size: 1.1em;
 	font-weight: bold;
 	letter-spacing: 0.1em;
@@ -257,6 +262,7 @@ header {
 	line-height: 1.5em;
 	font-size: 1.3em;
 	font-weight: bold;
+	font-family: 'Nunito Sans', sans-serif;
 	color: var(--p-text);
 }
 
@@ -314,7 +320,6 @@ header {
 	justify-content: center;
 	align-self: center;
 }
-
 
 .project__container {
 	margin: 1em 2em 4em 2em;
@@ -452,7 +457,7 @@ header {
 
 /*-------------------- Footer --------------------*/
 footer {
-	margin-top: 5%;
+	margin: 0%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -492,8 +497,7 @@ footer p {
 	transform: scale(1.1);
 }
 
-
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
 
 	/* projects */
 	.projects__wrapper {
@@ -642,3 +646,21 @@ footer p {
 		width: 3rem;
 	}
 }
+
+/* #home,
+#tech-stack,
+#contact {
+	margin: 0;
+
+
+	#D7879B
+
+	#F0F0C2
+	#E58E9D 
+
+
+	background-color: #f0f0c2;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23f0f0c2' cx='50' cy='0' r='50'/%3E%3Cg fill='%23f1ebbc' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f1e6b7' cx='50' cy='100' r='50'/%3E%3Cg fill='%23f2e2b2' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f3ddae' cx='50' cy='200' r='50'/%3E%3Cg fill='%23f3d8a9' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f4d3a6' cx='50' cy='300' r='50'/%3E%3Cg fill='%23f4cda2' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f5c89f' cx='50' cy='400' r='50'/%3E%3Cg fill='%23f5c39d' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f5be9b' cx='50' cy='500' r='50'/%3E%3Cg fill='%23f5b999' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f4b498' cx='50' cy='600' r='50'/%3E%3Cg fill='%23f4af98' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f3aa97' cx='50' cy='700' r='50'/%3E%3Cg fill='%23f1a597' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f0a098' cx='50' cy='800' r='50'/%3E%3Cg fill='%23ee9b99' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23eb979a' cx='50' cy='900' r='50'/%3E%3Cg fill='%23e8929b' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e58e9d' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: contain;
+} */
