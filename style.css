@@ -268,7 +268,7 @@ header {
 	justify-content: center;
 	text-align: center;
 	border-bottom: 1px solid var(--border);
-	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.08), 0 0px 10px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08), 0 2px 16px rgba(0, 0, 0, 0.15);
 }
 
 .about__article {
@@ -335,8 +335,7 @@ header {
 	justify-content: center;
 	text-align: center;
 	border-bottom: 1px solid var(--border);
-	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.08), 0 0px 10px rgba(0, 0, 0, 0.15);
-
+	box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08), 0 2px 16px rgba(0, 0, 0, 0.15);
 }
 
 .projects__wrapper {
