@@ -20,7 +20,7 @@ To run in terminal:
 
 Free Illustrations of Black People, [Black Illustrations](https://gumroad.com/blackillustrations)
 
-I customized the wicked cool background on my landing page at SVGBackgrounds.com.
+I customized the wicked cool background at SVGBackgrounds.com.
 
 ## License
 
