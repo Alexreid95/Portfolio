@@ -60,10 +60,12 @@ body {
 	height: 100%;
 	opacity: 0;
 	filter: blur(2em);
-	background: linear-gradient(90deg,
-			var(--second-accent),
-			var(--accent),
-			var(--second-accent));
+	background: linear-gradient(
+		90deg,
+		var(--second-accent),
+		var(--accent),
+		var(--second-accent)
+	);
 	background-size: 500%;
 	border-radius: 2em;
 	transition: opacity 0.4s ease-in-out;
@@ -128,7 +130,7 @@ header {
 	flex-direction: row;
 	justify-content: space-around;
 	height: 3em;
-	font-family: 'Prompt', sans-serif;
+	font-family: "Prompt", sans-serif;
 	background-color: var(--accent);
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
 }
@@ -181,7 +183,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	height: 85vh;
-	font-family: 'Quicksand', sans-serif;
+	font-family: "Quicksand", sans-serif;
 	text-align: center;
 }
 
@@ -204,7 +206,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
-	font-family: 'Prompt', sans-serif;
+	font-family: "Prompt", sans-serif;
 	font-size: 1.1em;
 	font-weight: bold;
 	letter-spacing: 0.1em;
@@ -221,7 +223,7 @@ header {
 	transform: scale(1.1);
 }
 
-.home__button>span {
+.home__button > span {
 	position: absolute;
 	transform: translate(-50%, -50%);
 	border-radius: 50%;
@@ -270,7 +272,7 @@ header {
 	line-height: 1.5em;
 	font-size: 1.3em;
 	font-weight: bold;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: "Nunito Sans", sans-serif;
 	color: var(--p-text);
 }
 
@@ -371,9 +373,11 @@ header {
 
 .project__back {
 	color: var(--nav-text);
-	background: linear-gradient(45deg,
-			var(--accent) 0%,
-			var(--second-accent) 100%);
+	background: linear-gradient(
+		45deg,
+		var(--accent) 0%,
+		var(--second-accent) 100%
+	);
 	transform: rotateY(180deg);
 }
 
@@ -413,12 +417,18 @@ header {
 	color: var(--second-accent);
 }
 
-.project__container:hover>.project__back {
+.project__container:hover > .project__back {
 	transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
 }
 
-.project__container:hover>.project__front {
+.project__container:hover > .project__front {
 	transform: rotateY(-180deg);
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
 }
 
 /*-------------------- Content --------------------*/
@@ -502,7 +512,6 @@ footer p {
 }
 
 @media (max-width: 1000px) {
-
 	/* projects */
 	.projects__wrapper {
 		flex-direction: column;
@@ -511,7 +520,6 @@ footer p {
 }
 
 @media only screen and (max-width: 600px) {
-
 	/* nav */
 	.navbar {
 		display: flex;
