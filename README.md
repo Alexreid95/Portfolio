@@ -6,6 +6,10 @@ A portfolio website to showcase my projects
 
 ## Screenshots
 
+![](https://i.imgur.com/ta3pW0T.png)
+
+![](https://i.imgur.com/wKdAVZV.gif)
+
 ## Tech/framework used
 
 HTML, CSS, JavaScript, Netlify
@@ -20,7 +24,7 @@ To run in terminal:
 
 Free Illustrations of Black People, [Black Illustrations](https://gumroad.com/blackillustrations)
 
-I customized the wicked cool background at SVGBackgrounds.com.
+I customised the wicked cool background at [SVGBackgrounds](SVGBackgrounds.com)
 
 ## License
 
